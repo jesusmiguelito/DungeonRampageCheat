@@ -17,11 +17,12 @@
 
 ---
 
-## 🌍 Language / Idioma / Dil
+## 🌍 Language / Idioma / Dil / Idioma
 
 - [🇺🇸 English](#-english-version)
 - [🇧🇷 Português](#-versão-em-português)
 - [🇹🇷 Türkçe](#-türkçe-sürüm)
+- [🇪🇸 Español](#-versión-en-español)
 
 ---
 
@@ -847,18 +848,296 @@ Bu proje **MIT Lisansı** altında lisanslanmıştır - ayrıntılar için [LICE
 
 ---
 
+# 🇪🇸 Versión en Español
+
+## 📋 Tabla de Contenidos
+
+- [Acerca de](#-acerca-de)
+- [Características](#-características)
+- [Descarga e Instalación](#-descarga-e-instalación)
+- [Cómo Usar](#-cómo-usar)
+- [Compilar desde el Código Fuente](#-compilar-desde-el-código-fuente)
+- [Tecnologías](#-tecnologías)
+- [Aviso Legal](#-aviso-legal)
+- [Contacto](#-contacto)
+- [Licencia](#-licencia)
+
+---
+
+## 🎯 Acerca de
+
+**Dungeon Rampage Cheat Tool** es un framework de manipulación de memoria en tiempo real desarrollado para pruebas de Dungeon Rampage Early Access. Este proyecto ofrece características avanzadas para pruebas de calidad y balance de juego a través de técnicas de inyección de procesos, escaneo de patrones y parcheado de memoria.
+
+### ✨ Destacados
+
+- 🗺️ **WallHack** - Atraviesa paredes en todos los mapas
+- 🚀 **Speed Hack** - Aumenta la velocidad de movimiento (Solo Ranger)
+- 🔭 **Zoom Hack** - Ajusta el zoom de la cámara
+- 🎮 **Interfaz Moderna** - UI WPF intuitiva y responsiva
+- 🔧 **Código Abierto** - Código 100% abierto y auditable
+
+---
+
+## 🚀 Características
+
+### 🗺️ WallHack (Atravesar Paredes)
+
+Permite pasar a través de obstáculos en todos los mapas disponibles:
+
+- ✅ Arena
+- ✅ Barrows (Catacumbas)
+- ✅ Cavern (Caverna)
+- ✅ Dino Park (Parque de Dinosaurios)
+- ✅ Frost Guard (Guardia de Escarcha)
+- ✅ Jungle (Jungla)
+- ✅ Prison (Prisión)
+- ✅ Ruins (Ruinas)
+- ✅ Battleheim (Campo de Batalla)
+
+**Cómo funciona:**
+1. Conecta al proceso del juego
+2. Escanea los mapas cargados
+3. Activa/desactiva individualmente o todos a la vez
+4. Restaura cuando sea necesario
+
+### ⚡ Speed Hack (Solo Ranger)
+
+Aumenta la velocidad de movimiento general para la clase Ranger:
+
+- 🎯 **Patrón:** Firma de memoria de 16 bytes
+- ⚡ **Efecto:** Movimiento y proyectiles más rápidos
+- 🔄 **Alternar:** Activar/Desactivar a demanda
+- 📊 **Tiempo real:** Activación instantánea
+
+### 🔭 Zoom Hack (Cámara)
+
+Control total sobre el zoom de la cámara:
+
+- 🎚️ **Deslizador** - Ajuste preciso de 0.1 a 0.63
+- 🎯 **Presets** - Valores rápidos (0.1, 0.2, 0.3, 0.4, 0.5)
+- 🔄 **Restaurar** - Volver al zoom predeterminado (0.63)
+- 📏 Valores más bajos = más alejamiento (vista más amplia)
+
+---
+
+## 📥 Descarga e Instalación
+
+### Opción 1: Descarga Binaria (Recomendado)
+
+1. Ve a la página de [**Releases**](https://github.com/tonhowtf/DungeonRampageCheat/releases/latest)
+2. Descarga la última versión (`DungeonRampageCheat-v1.0.0-win-x64.zip`)
+3. Extrae el archivo ZIP
+4. Ejecuta `DungeonRampageCheat.exe`
+
+**Requisitos:**
+- Windows 10/11 (64-bit)
+- .NET 8.0 Runtime (incluido en el ejecutable)
+- Dungeon Rampage Early Access instalado
+
+### Opción 2: Compilar desde el Código Fuente
+
+Ve a la sección [Compilar desde el Código Fuente](#-compilar-desde-el-código-fuente)
+
+---
+
+## 🎮 Cómo Usar
+
+### Paso 1: Iniciar el Juego
+```
+1. Abre Dungeon Rampage Early Access
+2. Entra en un mapa/mazmorra
+```
+
+### Paso 2: Conectar al Proceso
+```
+1. Abre DungeonRampageCheat.exe
+2. Ingresa el nombre del proceso (predeterminado: "Dungeon Rampage Early Access")
+3. Haz clic en "🔌 Attach"
+4. Espera la confirmación de conexión
+```
+
+### Paso 3: WallHack
+```
+1. Haz clic en "🔍 Scan Maps"
+2. Espera el escaneo completo
+3. Activa los mapas deseados individualmente
+   O
+4. Usa "✅ Apply All" para activar todos
+```
+
+### Paso 4: Speed Hack (Solo Ranger)
+```
+1. Juega con la clase Ranger
+2. Ve a la pestaña "⚡ Misc"
+3. Haz clic en "🔍 Scan Speed"
+4. Haz clic en "▶️ Enable Speed"
+5. Alterna encendido/apagado según sea necesario
+```
+
+### Paso 5: Zoom Hack
+```
+1. Asegúrate de estar en el juego (no en el menú)
+2. Ve a la pestaña "⚡ Misc"
+3. Haz clic en "🔍 Scan Zoom"
+4. Usa el deslizador o presets para ajustar
+5. Haz clic en "↩️ Restore" para volver a la normalidad
+```
+
+---
+
+## 🛠️ Compilar desde el Código Fuente
+
+### Prerequisitos
+
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) o superior
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- Windows 10/11
+
+### Paso a Paso
+
+#### 1. Clonar el Repositorio
+```bash
+git clone https://github.com/tonhowtf/DungeonRampageCheat.git
+cd DungeonRampageCheat
+```
+
+#### 2. Restaurar Dependencias
+```bash
+dotnet restore
+```
+
+#### 3. Compilar para Debug
+```bash
+dotnet build -c Debug
+```
+
+#### 4. Compilar para Release (Archivo Único)
+```bash
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+```
+
+El ejecutable estará en:
+```
+bin/Release/net8.0-windows/win-x64/publish/DungeonRampageCheat.exe
+```
+
+---
+
+## 💻 Tecnologías
+
+### Core
+- **C# 12** - Lenguaje de programación
+- **.NET 8.0** - Framework
+- **WPF** - Interfaz gráfica
+
+### Bibliotecas
+- **PInvoke.Kernel32** - Acceso a APIs de Windows
+- **PInvoke.User32** - Manipulación de ventanas
+- **ModernWpf** - UI moderna
+
+### Técnicas
+- Escaneo de memoria (búsqueda de patrones)
+- Inyección de procesos
+- Parcheado de memoria
+- Manipulación de memoria en tiempo real
+
+---
+
+## ⚖️ Aviso Legal
+
+⚠️ **IMPORTANTE: LEA CUIDADOSAMENTE**
+
+Esta herramienta fue desarrollada **EXCLUSIVAMENTE** con fines educativos y de prueba durante la fase Early Access de Dungeon Rampage.
+
+### ❌ Prohibiciones
+
+- ❌ **NO usar en servidores públicos/oficiales**
+- ❌ **NO usar para hacer trampa contra otros jugadores**
+- ❌ **NO distribuir versiones modificadas sin créditos**
+- ❌ **NO usar para ventaja competitiva injusta**
+
+### ✅ Uso Permitido
+
+- ✅ Pruebas internas en entorno controlado
+- ✅ Aprendizaje de ingeniería inversa
+- ✅ Desarrollo y estudio de código
+
+### 📜 Descargo de Responsabilidad
+```
+Este software se proporciona "tal cual", sin garantías de ningún tipo.
+El autor no es responsable de:
+- Prohibiciones de cuenta
+- Daños al juego o sistema
+- Violaciones de ToS (Términos de Servicio)
+- Consecuencias legales del mal uso
+
+AL USAR ESTA HERRAMIENTA, USTED ACEPTA:
+- Asumir total responsabilidad por sus acciones
+- Usar solo en entornos de prueba autorizados
+- Respetar los derechos de los desarrolladores del juego
+- No perjudicar la experiencia de otros jugadores
+```
+
+---
+
+## 📞 Contacto
+
+### Discord
+**tonhowtf**
+
+Contacto para:
+- 🐛 Reportar errores
+- 💡 Sugerir características
+- 🤝 Colaborar en el proyecto
+- ❓ Hacer preguntas
+
+### GitHub
+- 🌟 [Dejar una Estrella](https://github.com/tonhowtf/DungeonRampageCheat)
+- 🐛 [Abrir un Issue](https://github.com/tonhowtf/DungeonRampageCheat/issues)
+- 🔀 [Hacer Fork](https://github.com/tonhowtf/DungeonRampageCheat/fork)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la **Licencia MIT** - consulte el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 🌟 Agradecimientos
+
+- Comunidad de Dungeon Rampage
+- Contribuidores del proyecto
+- Testers que reportaron errores
+
+---
+
+## 📊 Estado del Proyecto
+```
+✅ WallHack - Funcional
+✅ Speed Hack (Ranger) - Funcional
+✅ Zoom Hack - Funcional
+⏳ Ultimate Hack - En Desarrollo
+```
+
+---
+
 <div align="center">
 
 **Made with ❤️ by [tonhowtf](https://github.com/tonhowtf)**
 
 **❤️ ile yapıldı [tonhowtf](https://github.com/tonhowtf)**
 
-**[tonhowtf](https://github.com/tonhowtf) tarafından ❤️ ile yapıldı**
+**Feito com ❤️ por [tonhowtf](https://github.com/tonhowtf)**
+
+**Hecho con ❤️ por [tonhowtf](https://github.com/tonhowtf)**
 
 If this project helped you, consider leaving a ⭐!
 
+Bu proje size yardımcı olduysa, bir ⭐ bırakmayı düşünün!
+
 Se este projeto te ajudou, considere deixar uma ⭐!
 
-Bu proje size yardımcı olduysa, bir ⭐ bırakmayı düşünün!
+¡Si este proyecto te ayudó, considera dejar una ⭐!
 
 </div>
